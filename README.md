@@ -1,7 +1,7 @@
-- 👋 Hi, I’m @Kage7047
+- 👋 Hi, I’m Ilya Nesterenok @Kage7047
 - 🌱 I’m currently learning Networking / Cyber Security
 - 💞️ I’m looking to collaborate
-- 📫 How to reach me kage7047@gmail.com
+- 📫 How to reach me kage7047@gmail.com / ilya.nesterenok.work@gmail.com
 - 😄 Pronouns: He / Him
 
 
