@@ -18,7 +18,7 @@ Next.js · Claude API & Agent SDK · Stripe · GitHub Actions · Railway · Verc
 - **[edgefeed](https://github.com/Kage7047/edgefeed)**: detects cross-venue arbitrage on
   prediction markets (Kalshi / Polymarket), net of real fees and order-book depth. It's in the
   validation stage, testing whether the edge exists before building the app.
-- **NudgeLink** (private): a multi-tenant SaaS with an AI lead-scoring and message-generation
+- **[NudgeLink](https://nudgelink.co)** (private): a multi-tenant SaaS with an AI lead-scoring and message-generation
   pipeline, a Unipile LinkedIn integration, Stripe subscriptions with idempotent webhooks,
   gitleaks-guarded CI, and 2,200+ unit tests.
 
