@@ -1,27 +1,39 @@
 ### Hi, I'm Ilya 👋
 
-Backend & security engineer based in Warsaw. I'm the CTO and sole engineer at
-**[NudgeLink](https://nudgelink.co)**, an AI SDR for LinkedIn outreach. I built it end to end,
-from the lead-scoring pipeline to Stripe billing, and I run it in production.
+Backend, full-stack and DevOps engineer based in Warsaw. I'm the CTO and sole engineer at
+**[NudgeLink](https://nudgelink.co)**, an AI SDR for LinkedIn outreach. I designed and built it end to end,
+from the job queue and lead-scoring pipeline to Stripe billing, and I run it in production:
+CI, deploys, monitoring, backups and incident fixes.
 I'm finishing a B.Eng. in Cybersecurity (AEH Warsaw, 2027), so security is part of how I build
 from the start.
 
-**What I work with:** Python · FastAPI · Celery · PostgreSQL / pgvector · Redis · Docker ·
-Next.js · Claude API & Agent SDK · Stripe · GitHub Actions · Railway · Vercel · Linux
+- **Backend:** Python · FastAPI · Celery · PostgreSQL / pgvector · Redis · REST APIs & webhooks
+- **Full-stack:** TypeScript · Next.js · Astro · React · Supabase
+- **DevOps & security:** Docker · GitHub Actions · Railway · Vercel · Linux · Sentry · gitleaks · Postgres RLS
+- **AI:** Claude API & Agent SDK · prompt caching · model routing · cost metering
 
 ### Selected work
 
+- **[NudgeLink](https://nudgelink.co)** (private, in production): a multi-tenant SaaS. Durable
+  multi-week agent workflows on Postgres + Celery (`FOR UPDATE SKIP LOCKED` claiming, leases for
+  crash recovery, idempotent writes, a Redis kill switch), Stripe subscriptions with idempotent
+  webhooks, envelope-encrypted third-party credentials, per-call LLM cost metering, and
+  4,400+ unit and 460+ integration tests behind a gitleaks-guarded pipeline.
 - **[kioku-assistant](https://github.com/Kage7047/kioku-assistant)**: a self-hosted agentic
-  personal assistant. It uses the Claude Agent SDK over a git-backed markdown vault, with hybrid
-  BM25 + vector retrieval, model routing under a hard budget guard, and a human approval gate
-  on every write.
+  personal assistant. FastAPI + Celery + Postgres/pgvector, the Claude Agent SDK over a git-backed
+  markdown vault, hybrid BM25 + vector retrieval, model routing under a hard budget guard, and a
+  human approval gate on every outbound action.
+- **[Sidequest](https://github.com/Kage7047/Sidequest)**: a full-stack shared planner (Astro +
+  Supabase). PostgreSQL row-level security is the authorization boundary, sign-up is invite-only
+  through an auth hook, Web Push reminders run from an Edge Function on `pg_cron`, and GitHub
+  Actions builds and deploys it.
 - **[edgefeed](https://github.com/Kage7047/edgefeed)**: detects cross-venue arbitrage on
-  prediction markets (Kalshi / Polymarket), net of real fees and order-book depth. It's in the
-  validation stage, testing whether the edge exists before building the app.
-- **[NudgeLink](https://nudgelink.co)** (private): a multi-tenant SaaS with an AI lead-scoring and message-generation
-  pipeline, a Unipile LinkedIn integration, Stripe subscriptions with idempotent webhooks,
-  gitleaks-guarded CI, and 2,200+ unit tests.
+  prediction markets (Kalshi / Polymarket), net of real fees and order-book depth. A validation
+  spike: test whether the edge exists before building the product.
+
+<sub>Frontend side work: [a concept homepage](https://github.com/Kage7047/acl-landscaping-mockup)
+built with React, GSAP and Lenis.</sub>
 
 ### Contact
 
-📫 ilya.nesterenok.work@gmail.com · [LinkedIn](https://www.linkedin.com/in/ilyanesterenok-7587952aa)
+📫 ilya.nesterenok.work@gmail.com · [LinkedIn](https://www.linkedin.com/in/nesterenokilya)
