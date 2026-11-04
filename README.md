@@ -21,8 +21,9 @@ from the start.
   4,400+ unit and 460+ integration tests behind a gitleaks-guarded pipeline.
 - **[kioku-assistant](https://github.com/Kage7047/kioku-assistant)**: a self-hosted agentic
   personal assistant. FastAPI + Celery + Postgres/pgvector, the Claude Agent SDK over a git-backed
-  markdown vault, hybrid BM25 + vector retrieval, model routing under a hard budget guard, and a
-  human approval gate on every outbound action.
+  markdown vault, and a default-deny approval gate on every outbound action, backed by a written
+  threat model. Hybrid retrieval measured on a labelled set (recall@5 0.97), 220+ tests with a
+  scripted model, a one-command demo, and a signed container image.
 - **[Sidequest](https://github.com/Kage7047/Sidequest)**: a full-stack shared planner (Astro +
   Supabase). PostgreSQL row-level security is the authorization boundary, sign-up is invite-only
   through an auth hook, Web Push reminders run from an Edge Function on `pg_cron`, and GitHub
