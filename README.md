@@ -50,6 +50,7 @@ breaks at **[kage7047.github.io](https://kage7047.github.io)**.
 
 ### Writing
 
+- [My admission policy said Fail. Kyverno let everything in.](https://kage7047.github.io/writing/kyverno-fails-open/)
 - [Every feature I added to my Raft hid a bug from my tests](https://kage7047.github.io/writing/features-hide-bugs/)
 - [Adding workers made my Postgres queue 5× slower](https://kage7047.github.io/writing/more-workers-slower/)
 
