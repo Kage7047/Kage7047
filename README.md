@@ -26,6 +26,11 @@ breaks at **[kage7047.github.io](https://kage7047.github.io)**.
   loss, reordering) from its seed, and a chaos test `kill -9`s and freezes real processes; both
   check every client history for linearizability. Seven deliberately broken builds prove the
   checks can fail. Write-ahead log with torn-tail repair, ReadIndex reads, snapshots.
+- **[supply-chain-fortress](https://github.com/Kage7047/supply-chain-fortress)**: a software
+  supply chain where every defence has an attack that proves it. Images signed keyless by one
+  workflow, SBOM and SLSA provenance, Kyverno and built-in admission policies; 14 cluster attacks
+  and 5 workflow attacks run in CI, each with a control that shows it gets in without that
+  defence. The tests found that scaling Kyverno to zero makes it delete its own webhooks.
 - **[pg-lease-queue](https://github.com/Kage7047/pg-lease-queue)**: a crash-safe job queue on
   plain Postgres: `SKIP LOCKED` claims, leases with fencing tokens and exactly-once effects, proven
   by a `kill -9` chaos test on Postgres 14 to 17. 2,700 jobs/s on a laptop after
