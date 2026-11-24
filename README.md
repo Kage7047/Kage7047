@@ -1,16 +1,18 @@
 ### Hi, I'm Ilya 👋
 
-Backend, full-stack and DevOps engineer based in Warsaw. I'm the CTO and sole engineer at
+Backend and DevSecOps engineer based in Warsaw. I'm the CTO and sole engineer at
 **[NudgeLink](https://nudgelink.co)**, an AI SDR for LinkedIn outreach. I designed and built it end to end,
 from the job queue and lead-scoring pipeline to Stripe billing, and I run it in production:
 CI, deploys, monitoring, backups and incident fixes.
-I'm finishing a B.Eng. in Cybersecurity (AEH Warsaw, 2027), so security is part of how I build
-from the start. I like building systems and then trying to break them, and I write about what
+I also work on contract as a DevOps engineer for a healthcare technology company: a locked-down
+PostgreSQL environment for medical data, with restore-tested backups, host hardening and alerting.
+I'm finishing a B.Eng. in Cybersecurity (VIZJA University, formerly AEH, 2027), so security is part
+of how I build from the start. I like building systems and then trying to break them, and I write about what
 breaks at **[kage7047.github.io](https://kage7047.github.io)**.
 
 - **Backend:** Python · Go · FastAPI · Celery · PostgreSQL / pgvector · Redis · REST APIs & webhooks
 - **Full-stack:** TypeScript · Next.js · Astro · React · Supabase
-- **DevOps & security:** Docker · GitHub Actions · Railway · Vercel · Linux · Sentry · gitleaks · Postgres RLS
+- **DevOps & security:** Linux · Docker · Kubernetes · GitHub Actions · pgBackRest · Kyverno · Sigstore/cosign · SBOM & SLSA · gitleaks · Postgres RLS
 - **Testing:** deterministic simulation · `kill -9` chaos tests · linearizability checking (Porcupine) · pytest · Playwright
 - **AI:** Claude API & Agent SDK · prompt caching · model routing · cost metering
 
